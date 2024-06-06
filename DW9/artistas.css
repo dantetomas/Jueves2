@@ -1,0 +1,60 @@
+*{
+  margin: 0;
+}
+main h1{
+  text-align: center;
+  color: rgb(233, 64, 233);
+  font-size: 45px;
+}
+.container {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr; /*1 fraccion cada una */
+grid-template-rows: 1fr;
+gap: 10px 10px; /*espacioEntreFilas espacioEntreColumnas*/
+grid-auto-flow: row;
+grid-template-areas:
+  "tarjeta1 tarjeta2 tarjeta3"
+ ; /*"tarjeta3 . tarjeta3"; => NO SE PUEDE! */
+}
+
+.tarjeta1 {
+grid-area: tarjeta1;
+background-color: red;
+
+}
+
+.tarjeta2 {
+grid-area: tarjeta2;
+background-color: gray;
+}
+
+.tarjeta3 {
+grid-area: tarjeta3;
+background-color: brown;
+}
+
+/* Media query */
+
+@media(max-width:680px){
+.container {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "tarjeta1 tarjeta2 tarjeta3"; 
+}
+.tarjeta1 {
+      grid-area: tarjeta1;
+      background-color: rgba(226, 230, 14, 0.482);
+    }
+.tarjeta2 {
+      grid-area: tarjeta2;
+      background-color: gray;
+    }
+.tarjeta3 {
+    color:white;
+    }
+  
+}
+.barraNav{
+  background-color: red ¡important;
+}

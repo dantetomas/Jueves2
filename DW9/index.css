@@ -1,0 +1,188 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+/* 
+#32012F violeta 
+#524C42 gris
+#E2DFD0 blanco 
+#F97300 naranja
+ */
+
+/* Selector de etiqueta */
+body {
+  background-color: #32012f;
+  font-family: "Sedan SC", serif;
+}
+/* Selector de clase */
+
+ul {
+  background-color: #524c42;
+  text-align: center;
+  border-radius: 18px;
+  /* box-sizing:content-box; */
+  /* box-sizing: border-box; */
+}
+
+li {
+  display: inline-block;
+  list-style: none;
+  font-size: 24px;
+  color: #e2dfd0;
+  /* border-width: 2px; */
+  /* border-style:solid; */
+  /* border-color:black; */
+  /* border: 2px solid black; */
+
+  padding-left: 15px;
+  /* margin:5px; */
+}
+
+section {
+  background-color: #f97300;
+  display: block;
+  
+}
+
+
+/* Selector de id */
+#titulo {
+  text-align: center;
+  font-size: 40px;
+  color: #e2dfd0;
+}
+
+/* 
+las etiquetas valen 1
+las clases valen 10
+los id valen 100
+ */
+
+article p {
+  color: #e2dfd0;
+}
+
+p {
+  color: red;
+  font-family: "Times New Roman", Times, serif;
+}
+
+main {
+  /* background-image: url(""); */
+  background-image: url("/images\ \(1\).jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+section {
+  background-color: #524c42;
+}
+main h1 {
+  font-family: "Lugrasimo", cursive;
+}
+#titulo {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+article p {
+  font-size: 20px;
+  font-weight: 300;
+}
+article {
+  background-color: #e2dfd01e;
+  padding: 0px 18px;
+}
+
+/*  Dos tipos de etiquetas
+block: div, semanticas,ul,ol, li
+inline: a, img, span
+*/
+
+h2 span {
+  color: red;
+}
+.duki {
+  background-color: red;
+}
+.duki div {
+  width: 300px;
+  margin: 10px auto;
+  /* padding-right:140px; */
+}
+
+/* ##################### 16/05 ##################### */
+
+header,
+nav,
+main,
+section,
+article,
+footer{
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* box-model */
+ul {
+  padding: 10px 0;
+}
+h1 {
+  margin: 10px;
+}
+
+h2,
+h3 {
+  padding: 10px 10px;
+}
+
+/* Agregar background-image  */
+/* agregar una imágend e cada lado, se puede con una pseudoclase. ::after */
+section {
+  background-image: url("https://media.istockphoto.com/id/1367980393/es/vector/geom%C3%A9trica-futurista-fondo-de-gradaci%C3%B3n-p%C3%BArpura-profundo-ilustraci%C3%B3n-vectorial.jpg?s=612x612&w=0&k=20&c=kuBpO0ZPRaM9c47MfDm9zHRPMxgiJ--U1MkkseTGb34=");
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+}
+
+div img{
+  margin: 10px 0;
+}
+
+/* Trabajar con Flex */
+.imagenesMaria{
+  display: flex;
+  justify-content: center;
+}
+
+footer{
+  height: 200px;
+  max-width: 80%;
+}
+.redes{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #524c42;
+  align-items: center;
+  height: 20vh;
+}
+/*
+ Los iconos tienene las mismas propiedades
+que las tipografías
+ */
+
+ .redes p{
+  color: #F97300;
+ }
+ .redes i{
+  color:#F97300;
+  font-size: 45px;
+ }
+ .redes h4 a{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+
+/* Media-query */
